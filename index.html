@@ -35,17 +35,23 @@
             }
 
             button {
-                padding: 5px 10px;  /* Smaller padding for the button */
-                font-size: 0.9rem; /* Smaller font size */
+                padding: 5px 10px;
+                font-size: 0.9rem; 
             }
 
-            @media only screen and (max-width: 768px) {
+            @media (max-width: 768px) {  /* Mobile Devices */
                 .nav-urls {
                     display: none;
                 }
 
                 .spacer {
-                    padding: 17%;
+                    padding: 15%;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {  /* Tablets */
+                .nav-urls {
+                    display: none;
                 }
             }
 
