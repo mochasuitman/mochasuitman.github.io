@@ -6,6 +6,16 @@
         <meta name="color-scheme" content="light dark" />
         <link rel="stylesheet" href="/pico-main/css/pico.min.css">
         <title>Mocha Suit Man</title>
+        <script>
+
+            function openInNewTab(url) {
+                window.open(
+                    url,
+                    '_blank'
+                );
+            }
+
+        </script>
         <style>
             
             div.content {
@@ -13,6 +23,10 @@
                 align-items: center;
                 justify-content: center;
                 height: 100%;
+            }
+
+            .spacer {
+                padding: 5%;
             }
             
             img {
@@ -23,6 +37,16 @@
             button {
                 padding: 5px 10px;  /* Smaller padding for the button */
                 font-size: 0.9rem; /* Smaller font size */
+            }
+
+            @media only screen and (max-width: 768px) {
+                .nav-urls {
+                    display: none;
+                }
+
+                .spacer {
+                    padding: 20%;
+                }
             }
 
 
@@ -38,13 +62,13 @@
                         </h3>
                     </li>
                 </ul>
-                <ul>
-                    <li><a href="/brain" class="contrast">/brain</a></li>
-                    <li><a href="/blog" class="contrast">/blog</a></li>
-                    <li><a href="https://www.youtube.com/channel/UC2Uv0CY_CUcrzUpg68KZyNg" class="contrast">/youtube</a></li>
+                <ul class="nav-urls">
+                    <li><a href="/brain" target="_blank" class="contrast">/brain</a></li>
+                    <li><a href="/blog" target="_blank" class="contrast">/blog</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC2Uv0CY_CUcrzUpg68KZyNg" target="_blank"  class="contrast">/youtube</a></li>
                 </ul>
             </nav>
-            <div style="padding: 5%;"></div>
+            <div class="spacer"></div>
             <div class="grid">
                 <div align="center">
                     <img src="/assets/mochasuitman_logo_cropped.png" />
@@ -53,9 +77,9 @@
                     <p>Click the links below to explore more:</p>
                     <div class=grid style="margin-top: 40px;">
                         <div align="center">
-                            <button class="contrast" onclick="window.location.href='https://www.youtube.com/channel/UC2Uv0CY_CUcrzUpg68KZyNg'">YouTube</button>
-                            <button class="contrast" onclick="window.location.href='/brain'">Brain</button>
-                            <button class="contrast" onclick="window.location.href='/blog'">Blog</button>
+                            <button class="contrast" onclick="openInNewTab('https://www.youtube.com/channel/UC2Uv0CY_CUcrzUpg68KZyNg')">YouTube</button>
+                            <button class="contrast" onclick="openInNewTab('/brain')">Brain</button>
+                            <button class="contrast" onclick="openInNewTab('/blog')">Blog</button>
                         </div>
                     </div>
                 </div>
