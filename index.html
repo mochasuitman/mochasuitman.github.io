@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="color-scheme" content="light dark" />
+        <link rel="stylesheet" href="/pico-main/css/pico.min.css">
+        <title>Mocha Suit Man</title>
+        <script>
+
+            function openInNewTab(url) {
+                window.open(
+                    url,
+                    '_blank'
+                );
+            }
+
+        </script>
+        <style>
+            
+            div.content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+
+            .spacer {
+                padding: 5%;
+            }
+            
+            img {
+                height: 30%;
+                border-radius: 100%;
+            }
+
+            button {
+                padding: 5px 10px;
+                font-size: 0.9rem; 
+            }
+
+            @media (max-width: 768px) {  /* Mobile Devices */
+                .nav-urls {
+                    display: none;
+                }
+
+                .spacer {
+                    padding: 15%;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 1024px) {  /* Tablets */
+                .spacer {
+                    padding: 12%;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <main class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <h3 style="margin: 0px; color: var(--pico-h1-color);">
+                            <a href="." class="contrast">.mochasuitman</a>
+                        </h3>
+                    </li>
+                </ul>
+                <ul class="nav-urls">
+                    <li><a href="/brain" target="_blank" class="contrast">/brain</a></li>
+                    <li><a href="/blog" target="_blank" class="contrast">/blog</a></li>
+                    <li><a href="https://www.youtube.com/@mochasuitman" target="_blank"  class="contrast">/youtube</a></li>
+                </ul>
+            </nav>
+            <div class="spacer"></div>
+            <div class="grid">
+                <div align="center">
+                    <img src="/assets/mochasuitman_logo_cropped.png" />
+                    <h2 style="margin-top: 25px; margin-bottom: 5px;">Mocha Suit Man</h2>
+                    <p style="margin-bottom: 0px;">Interested in <strong>engineering</strong>💻 and <strong>math</strong>♾️?</p>
+                    <p>Click the links below to explore more:</p>
+                    <div class=grid style="margin-top: 40px;">
+                        <div align="center">
+                            <button class="contrast" onclick="openInNewTab('https://www.youtube.com/@mochasuitman')">YouTube</button>
+                            <button class="contrast" onclick="openInNewTab('/brain')">Brain</button>
+                            <button class="contrast" onclick="openInNewTab('/blog')">Blog</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
